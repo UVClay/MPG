@@ -52,8 +52,8 @@ typedef struct __attribute((packed, aligned(1)))
 } HIDReport;
 
 static const uint8_t hid_string_language[]     = { 0x09, 0x04 };
-static const uint8_t hid_string_manufacturer[] = "Licensed by Sony Computer Entertainment America";
-static const uint8_t hid_string_product[]      = "Very Real Harmonix Guitar for PlayStation(R)3";
+static const uint8_t hid_string_manufacturer[] = "Generic";
+static const uint8_t hid_string_product[]      = "HID Gamepad";
 static const uint8_t hid_string_version[]      = "1.0";
 
 static const uint8_t *hid_string_descriptors[] =
@@ -73,8 +73,8 @@ static const uint8_t hid_device_descriptor[] =
 	0x00,        // bDeviceSubClass
 	0x00,        // bDeviceProtocol
 	0x40,        // bMaxPacketSize0 64
-	0xBA, 0x12,  // idVendor 0x0F0D
-	0x00, 0x02,  // idProduct 0x92
+	0x0D, 0x0F,  // idVendor 0x0F0D
+	0x94, 0x00,  // idProduct 0x92
 	0x00, 0x01,  // bcdDevice 2.00
 	0x01,        // iManufacturer (String Index)
 	0x02,        // iProduct (String Index)
